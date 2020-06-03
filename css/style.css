@@ -309,8 +309,8 @@ a:hover, a:active, a:focus {
 
 #home .btn:hover {
   background: #000;
-  border-color: #ffffff;
-  color: #ffffff;
+  border-color: #000;
+  color: #ff0d20;
 }
 
 /*---------------------------------------

@@ -40,7 +40,7 @@ h4 {
 }
 
 p {
-    color: #777;
+    color: #000;
     font-size: 15px;
     font-weight: 300;
     line-height: 26px;
@@ -81,10 +81,10 @@ a:hover, a:active, a:focus {
   box-sizing: border-box;
 }
 
-#about, 
+#about,
 #gallery,
 #contact,
-#blog, 
+#blog,
 #blog-single-post {
   padding-top: 60px;
   padding-bottom: 80px;
@@ -116,7 +116,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-    Preloader section              
+    Preloader section
 -----------------------------------------*/
 
 .preloader {
@@ -140,7 +140,7 @@ a:hover, a:active, a:focus {
   border-radius: 40px;
   position: relative;
   -webkit-animation: sk-innerCircle 1s linear infinite;
-  animation: sk-innerCircle 1s linear infinite; 
+  animation: sk-innerCircle 1s linear infinite;
 }
 
 .sk-spinner-wordpress .sk-inner-circle {
@@ -151,7 +151,7 @@ a:hover, a:active, a:focus {
   position: absolute;
   border-radius: 8px;
   top: 5px;
-  left: 5px; 
+  left: 5px;
 }
 
 @-webkit-keyframes sk-innerCircle {
@@ -175,7 +175,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-    Main Navigation             
+    Main Navigation
 -----------------------------------------*/
 
 .navbar-default {
@@ -190,6 +190,7 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
   letter-spacing: 4px;
   margin: 0;
+	background-color: transparent;
 }
 
 .navbar-default .navbar-nav li a {
@@ -200,6 +201,7 @@ a:hover, a:active, a:focus {
     transition: all 0.4s ease-in-out;
     padding-right: 22px;
     padding-left: 22px;
+		background-color: transparent;
 }
 
 .navbar-default .navbar-nav > li a:hover {
@@ -235,14 +237,14 @@ a:hover, a:active, a:focus {
   }
 
 .navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus { 
+.navbar-default .navbar-toggle:focus {
   background-color: transparent;
 }
 
 
 
 /*---------------------------------------
-    Home section              
+    Home section
 -----------------------------------------*/
 
 #home {
@@ -264,23 +266,17 @@ a:hover, a:active, a:focus {
 .main-home {
   background: url('../images/home-bg.jpg') no-repeat;
   height: 100vh;
+  position: relative;
 }
 
 .main-about {
   background: url('../images/about-bg.jpg') no-repeat;
 }
 
-.main-single-post {
-  background: url('../images/single-post-bg.jpg') no-repeat;
-}
-
 .main-gallery {
   background: url('../images/gallery-bg.jpg') no-repeat;
 }
 
-.main-contact {
-  background: url('../images/contact-bg.jpg') no-repeat;
-}
 
 #particles-js {
   position: absolute;
@@ -295,10 +291,10 @@ a:hover, a:active, a:focus {
 }
 
 #home .btn {
-  background: #ffffff;
+  background: transparent;
   border: 2px solid #ffffff;
   border-radius: 100px;
-  color: #444;
+  color: #ccc;
   font-family: 'Merriweather', serif;
   font-size: 10px;
   font-weight: bold;
@@ -306,42 +302,19 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
   padding: 13px 22px;
   margin-top: 42px;
+	margin-left: auto;
+	margin-right: auto;
   transition: all 0.4s ease-in-out;
 }
 
 #home .btn:hover {
-  background: transparent;
+  background: #000;
   border-color: #ffffff;
   color: #ffffff;
 }
 
-
-
 /*---------------------------------------
-   About section              
------------------------------------------*/
-
-#about .col-md-6 {
-  padding-top: 22px;
-  padding-bottom: 32px;
-}
-
-#about .col-md-6 img {
-  padding: 22px 0px 22px 22px;
-}
-
-#about .col-md-4 {
-  padding-bottom: 32px;
-}
-
-#about .col-md-4 img {
-  padding-top: 12px;
-}
-
-
-
-/*---------------------------------------
-   Gallery section              
+   Gallery section
 -----------------------------------------*/
 
 #gallery span {
@@ -381,7 +354,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-   Contact section              
+   Contact section
 -----------------------------------------*/
 
 #contact .col-md-4 {
@@ -428,7 +401,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-   Blog section              
+   Blog section
 -----------------------------------------*/
 
 .blog-post-thumb {
@@ -589,7 +562,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-   Blog Single Post section              
+   Blog Single Post section
 -----------------------------------------*/
 
 #blog-single-post .blog-single-post-image {
@@ -614,7 +587,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-   Footer section              
+   Footer section
 -----------------------------------------*/
 
 footer {
@@ -668,7 +641,7 @@ footer .footer-copyright {
 
 
 /*---------------------------------------
-   Social icon             
+   Social icon
 -----------------------------------------*/
 
 .social-icon {
@@ -709,13 +682,13 @@ footer .footer-copyright {
 
 
 /*---------------------------------------
-   Mobile Responsive         
+   Mobile Responsive
 -----------------------------------------*/
 
 @media (max-width: 980px) {
 
   .main-about,
-  .main-single-post,  
+  .main-single-post,
   .main-gallery,
   .main-contact {
     height: 35vh;
@@ -763,4 +736,3 @@ footer .footer-copyright {
   }
 
 }
-
